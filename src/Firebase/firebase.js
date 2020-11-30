@@ -1,15 +1,16 @@
+/* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
 import app from 'firebase/app';
 import 'firebase/auth';
 
  const config = {
-    apiKey: "AIzaSyCdgjjP3qz6HD2431JHSxDprpJcIFoR1QM",
-    authDomain: "onlinedwork-4e6ec.firebaseapp.com",
-    databaseURL: "https://onlinedwork-4e6ec.firebaseio.com",
-    projectId: "onlinedwork-4e6ec",
-    storageBucket: "onlinedwork-4e6ec.appspot.com",
-    messagingSenderId: "189850720170",
-    appId: "1:189850720170:web:5790db940dd99afd41bdd3"
+      apiKey: process.env.REACT_APP_API_KEY,
+      authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+      databaseURL: process.env.REACT_APP_DATABASE_URL,
+      projectId: process.env.REACT_APP_PROJECT_ID,
+      storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+      messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+      appId: process.env.REACT_APP_APP_ID,
   };
 
   class Firebase extends Component {

@@ -3,6 +3,11 @@ import './style.scss';
 
 class Navbar extends Component {
     render() {
+      const { location } = this.props;
+      const homepage = location.pathname.match(/^\//) ? 'active' : '';
+      const newUser = location.pathname.match(/^\/newUser/) ? 'active' : ''; 
+      const login = location.pathname.match(/^\/login/) ? 'active' : ''; 
+      const about = location.pathname.match(/^\/about/) ? 'active' : ''; 
         return(
     <nav className="navbar navbar-expand-md navbar-dark bg-primary fixed-top py-2">
             <div className="container">
@@ -14,16 +19,16 @@ class Navbar extends Component {
                 </button>
                   <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ml-auto">
-                      <li className="nav-item text-white">
+                      <li className={`nav-item ${homepage}`}>
                         <a href="/" className="nav-link">HOME</a>
                       </li>
-                      <li className="nav-item">
-                        <a href="#skills" className="nav-link">SIGNUP</a>
+                      <li className={`nav-item ${newUser}`}>
+                        <a href="/newUser" className="nav-link">SIGNUP</a>
                       </li>
-                      <li className="nav-item">
-                        <a href="#projects" className="nav-link">LOGIN</a>
+                      <li className={`nav-item ${login}`}>
+                        <a href="/login" className="nav-link">LOGIN</a>
                       </li>
-                      <li className="nav-item">
+                      <li className={`nav-item ${about}`}>
                         <a href="#contact" className="nav-link">ABOUT US</a>
                       </li>
                     </ul>
