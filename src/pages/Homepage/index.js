@@ -8,7 +8,7 @@ class Homepage extends Component {
     render(){
         return(
     <div>
-        <Navbar />
+        <Navbar { ...this.props } />
         <section id="landingPage" className="py-5">
             <div className="container">
                 <div className="row">
