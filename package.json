@@ -47,7 +47,10 @@
     ]
   },
   "devDependencies": {
+    "chart.js": "^2.9.4",
     "cogo-toast": "^4.2.3",
-    "firebase": "^7.22.1"
+    "firebase": "^7.22.1",
+    "react-chartjs-2": "^2.11.1",
+    "react-google-maps": "^9.4.5"
   }
 }
