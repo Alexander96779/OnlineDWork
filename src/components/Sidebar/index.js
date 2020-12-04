@@ -9,7 +9,7 @@ class Sidebar extends Component {
       const jobs = location.pathname.match(/^\/myJobs/) ? 'active' : ''; 
       const maps = location.pathname.match(/^\/location/) ? 'active' : ''; 
       const notifications = location.pathname.match(/^\/notifications/) ? 'active' : '';
-      const userProfiles = location.pathname.match(/^\/userProfiles/) ? 'active' : '';
+      const userProfile = location.pathname.match(/^\/userProfile/) ? 'active' : '';
        
         return(
     <div>
@@ -45,8 +45,8 @@ class Sidebar extends Component {
               <p>Notifications</p>
             </a>
           </li>
-          <li className={`${userProfiles}`}>
-            <a href="/userProfiles">
+          <li className={`${userProfile}`}>
+            <a href="/userProfile">
               <i className="now-ui-icons users_circle-08"></i>
               <p>User Profile</p>
             </a>

@@ -42,7 +42,7 @@ return (
             <div className="row">
                 <div className="col-md-4 mx-auto">
                     <div className="card bg-light mt-5">
-                        <img alt="user-icon" src={userIcon} className="avatar rounded-circle py-0 pl-5 pr-5" />
+                        <img alt="user-icon" src={userIcon} className="rounded-circle py-0 pl-5 pr-5" />
                         <div className="card-body">
                         <form onSubmit={this.handleSubmit}>
                             <div className="input-group form-group">

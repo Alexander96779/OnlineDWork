@@ -5,6 +5,7 @@ import Signup from '../pages/Signup';
 import Login from '../pages/Login';
 import Dashboard from '../pages/Dashboard';
 import Maps from '../pages/Maps';
+import UserProfile from '../pages/UserProfiles';
 
 export default function index() {
     return(
@@ -14,6 +15,7 @@ export default function index() {
             <Route path="/login" exact component={Login} />
             <Route path="/home" exact component={Dashboard} />
             <Route path="/location" exact component={Maps} />
+            <Route path="/userProfile" exact component={UserProfile} />
         </Switch>
     )
 }
