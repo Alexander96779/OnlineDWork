@@ -1339,7 +1339,6 @@ fieldset[disabled] .btn-link.active {
 }
 
 .form-control:focus {
-  border: 1px solid #f96332;
   -webkit-box-shadow: none;
   box-shadow: none;
   outline: 0 !important;
@@ -1350,7 +1349,6 @@ fieldset[disabled] .btn-link.active {
 .form-control:focus~.input-group-append .input-group-text,
 .form-control:focus+.input-group-prepend .input-group-text,
 .form-control:focus~.input-group-prepend .input-group-text {
-  border: 1px solid #f96332;
   border-left: none;
   background-color: transparent;
 }
